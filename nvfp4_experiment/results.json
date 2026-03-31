@@ -1,0 +1,25 @@
+{
+  "bf16": {
+    "val_loss": 1.5419,
+    "perplexity": 4.67,
+    "total_train_time_s": 95.5,
+    "iters_per_sec": 11.16,
+    "peak_vram_mb": 1557.2
+  },
+  "int4": {
+    "val_loss": 1.5556,
+    "perplexity": 4.74,
+    "model_size_mb": 10.9,
+    "compression_vs_bf16": 3.75,
+    "inference_toks_per_sec": 354.3,
+    "peak_vram_mb": 204.5
+  },
+  "nvfp4": {
+    "precision": "FP8 DelayedScaling (E4M3, best available \u2014 NVFP4 blocked by WSL2 shmem limit)",
+    "val_loss": 1.5031,
+    "perplexity": 4.5,
+    "total_train_time_s": 65.8,
+    "iters_per_sec": 16.61,
+    "peak_vram_mb": 1208.5
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "fp16": {
+    "val_loss": 3.9475,
+    "perplexity": 51.81,
+    "total_train_time_s": 4069.4,
+    "iters_per_sec": 1.24,
+    "peak_vram_mb": 3862.6
+  },
+  "int8": {
+    "val_loss": 3.9719,
+    "perplexity": 53.08,
+    "model_size_mb": 82.3,
+    "compression_vs_fp16": 3.95,
+    "inference_toks_per_sec": 38.1,
+    "peak_vram_mb": 497.0
+  },
+  "fp8_native": {
+    "precision": "FP8 E4M3 DelayedScaling (Blackwell Tensor Cores)",
+    "val_loss": 3.5923,
+    "perplexity": 36.32,
+    "total_train_time_s": 2305.5,
+    "iters_per_sec": 2.31,
+    "peak_vram_mb": 2774.7
+  },
+  "int4": {
+    "val_loss": 3.9657,
+    "perplexity": 52.76,
+    "model_size_mb": 84.5,
+    "compression_vs_bf16": 3.84,
+    "inference_toks_per_sec": 27.6,
+    "peak_vram_mb": 710.3
+  },
+  "nvfp4_native": {
+    "precision": "NVFP4 E2M1 (disable_rht=True, disable_stochastic_rounding=True)",
+    "max_iters": 5000,
+    "val_loss": 3.4772,
+    "perplexity": 32.37,
+    "total_train_time_s": 563.2,
+    "iters_per_sec": 9.07,
+    "peak_vram_mb": 2496.3
+  }
+}
